@@ -1,0 +1,26 @@
+{
+  "name": "trickleList",
+  "main": "trickleList.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/iamhexcoder/trickleList",
+  "authors": [
+    "Shaun Baer <sbaer@j2designpartnership.com>"
+  ],
+  "devDependencies": {
+    "jquery": "1.11"
+  },
+  "description": "A jquery plguin for fading in children of an element in succession.",
+  "keywords": [
+    "trickle",
+    "list",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
