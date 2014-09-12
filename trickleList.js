@@ -3,7 +3,7 @@
   $.fn.trickleList = function() {
 
     // Setup Vars
-    var settings = $.extend({
+    var options = $.extend({
       childTarget: $(this),
       delayInc: 150,
       fadeTime: 400,
@@ -13,11 +13,11 @@
     // Function for revealing children of element
     function revealItem(){
       var winWidth = $(window).width();
-      if(winWidth > settings.minWidth){
+      if(winWidth > options.minWidth){
         var delayTime = 0;
-        $(settings.childTarget).children().each(function(){
-          $(this).stop(true, false).delay(delayTime).fadeIn(settings.fadeTime);
-          delayTime = delayTime + settings.delayInc;
+        $(options.childTarget).children().each(function(){
+          $(this).stop(true, false).delay(delayTime).fadeIn(options.fadeTime);
+          delayTime = delayTime + options.delayInc;
         });
       }
     }
@@ -25,17 +25,17 @@
     // Function for hiding children of element
     function hideItem(){
       var winWidth = $(window).width();
-      if(winWidth > settings.minWidth){
-        $(settings.childTarget).children().each(function(){
-          $(this).stop(true, false).fadeOut(settings.fadeTime);
+      if(winWidth > options.minWidth){
+        $(options.childTarget).children().each(function(){
+          $(this).stop(true, false).fadeOut(options.fadeTime);
         });
       }
     }
 
     // Hide the Elements if needed
     function windowCheck() {
-      if(winWidth > settings.minWidth){
-        $(settings.childTarget).children().hide();
+      if(winWidth > options.minWidth){
+        $(options.childTarget).children().hide();
       }
     }
 
