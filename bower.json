@@ -7,7 +7,8 @@
     "Shaun Baer <sbaer@j2designpartnership.com>"
   ],
   "devDependencies": {
-    "jquery": "1.11"
+    "jquery": "1.11",
+    "tricklelist": "~0.1.0"
   },
   "description": "A jquery plguin for fading in children of an element in succession.",
   "keywords": [

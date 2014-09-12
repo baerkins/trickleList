@@ -1,8 +1,13 @@
 #Trickle List
 
-A simple jquery plugin for fading in children of an element in succession.
+A simple jquery plugin for fading in children of an element in succession on hover. Can be used for a tickle list.
 
 [Demo](http://iamhexcoder.github.io/trickleList/)
+
+This plugin requires jQuery.
+
+You can install this plugin via Bower:
+`bower install tricklelist --save-dev`
 
 ##Options
 ```JavaScript
