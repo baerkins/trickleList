@@ -1,4 +1,4 @@
-;(function($) {
+(function ($) {
 
   $.fn.trickleList = function() {
 
@@ -49,6 +49,6 @@
       winWidth = $(window).width();
       windowCheck();
     });
-  }
+  };
 
 }(jQuery));
